@@ -1,5 +1,4 @@
 <?php
-  //session_start();
   class db{
     private $connectionString = 'mysql:host=127.0.0.1; dbname=BDS_php';
     private $user = 'root';
