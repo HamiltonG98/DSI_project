@@ -4,6 +4,10 @@
 <?php include('includes/navbar.php') ?>
 
 <?php
+  if(!isset($_SESSION['role'])){
+    header('location: index.php');
+  }
+
   if(isset($_GET['id'])){
     $objUser = new Usuario();
     $user = $objUser->getUserById($_GET['id']);

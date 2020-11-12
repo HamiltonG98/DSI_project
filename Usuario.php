@@ -26,6 +26,8 @@
 
       if($user){
         $_SESSION['role'] = $user['role'];
+        $_SESSION['nombres'] = $user['nombres'];
+        $_SESSION['apellidos'] = $user['apellidos'];
   
         header("Location: home.php");
       }else{

@@ -3,3 +3,11 @@
   text-align: center;
   align-self: center;
 }
+
+div.form-inline{
+  color: white;
+}
+
+.form-inline i.fas{
+  color: white;
+}

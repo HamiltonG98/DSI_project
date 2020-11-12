@@ -3,6 +3,12 @@
 <?php include('includes/header.php') ?>
 <?php include('includes/navbar.php') ?>
 
+<?php
+  if(!isset($_SESSION['role'])){
+    header('location: index.php');
+  }
+?>
+
 <div class="container mt-3">
   <h1>Lista de Usuarios</h1>
   <?php if(isset($_SESSION['message'])){ ?>

@@ -4,6 +4,10 @@
 <?php include('includes/navbar.php') ?>
 
 <?php
+  if(!isset($_SESSION['role'])){
+    header('location: index.php');
+  }
+
   if(isset($_POST['register'])){
     $objUser = new Usuario();
     $objUser->insertUser(

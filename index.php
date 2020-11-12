@@ -2,6 +2,12 @@
 
 <?php include('includes/header.php') ?>
 
+<?php 
+  if(isset($_SESSION['role'])){
+    header('location: home.php');
+  }
+?>
+
 <div class="row justify-content-center">
   <div class="col-4 mt-5">
     <div class="card w-100 p-3 text-white bg-danger" id="card-login">
